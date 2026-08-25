@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>JustFRENCH</title>
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <style>
+        /* Strict Mobile Viewport & Text Wrapping Fixes */
+        html, body {
+            overflow-x: hidden !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+        @media (max-width: 768px) {
+            .navbar-default .navbar-collapse {
+                background-color: #222;
+                padding: 15px;
+            }
+            #main-slider, #main-slider .item, #main-slider .slider-inner {
+                height: 300px !important;
+                min-height: 300px !important;
+                background-size: cover !important;
+                background-position: center center !important;
+                width: 100% !important;
+            }
+            #main-slider .container {
+                width: 100% !important;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+                margin: 0 !important;
+            }
+            #main-slider .row {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            #main-slider .col-sm-6 {
+                width: 100% !important;
+                float: none !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            #main-slider .carousel-content {
+                padding: 0 !important;
+                margin-top: 15px !important;
+                text-align: left !important;
+                width: 100% !important;
+            }
+            #main-slider .carousel-content h2 {
+                font-size: 13px !important;
+                line-height: 1.4 !important;
+                margin-bottom: 12px !important;
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+                white-space: normal !important;
+                max-width: 90% !important;
+            }
+            #main-slider .btn {
+                padding: 6px 14px !important;
+                font-size: 12px !important;
+                display: inline-block !important;
+                position: relative !important;
+                float: none !important;
+            }
+            .section-title {
+                font-size: 24px !important;
+            }
+            #google-map {
+                height: 350px !important;
+            }
+            .pricing {
+                margin-bottom: 30px;
+            }
+        }
+        #lang-switch {
+            display: inline-block;
+            padding: 5px 10px;
+        }
+    </style>
+</head><!--/head-->
+
+<body id="home" class="homepage">
+
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logosmall.png" alt="logo"></a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" id="lang-switch" style="font-weight: bold; color: #ff6b6b; cursor: pointer;"><span id="lang-text">FR</span></a></li>
+                        <li class="scroll active"><a href="#home" data-en="About Us" data-fr="À Propos">About Us</a></li>
+                        <li class="scroll"><a href="#pricing" data-en="Services" data-fr="Services">Services</a></li>
+                        <li class="scroll"><a href="#companies" data-en="Companies" data-fr="Entreprises">Companies</a></li>
+                        <li class="scroll"><a href="#children" data-en="Children’s Programs" data-fr="Programmes pour Enfants">Children’s Programs</a></li>
+                        <li class="scroll"><a href="#adults" data-en="Adult’s Programs" data-fr="Programmes pour Adultes">Adult’s Programs</a></li>
+                        <li class="scroll"><a href="#get-in-touch" data-en="Contact" data-fr="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    <section id="main-slider">
+      <div class="item" style="background-image: url(images/cover/coversmall.jpg);">
+        <div class="slider-inner">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="carousel-content">
+                          <h2><span data-en="JustFRENCH" data-fr="JustFRENCH">JustFRENCH</span> <span data-en="IS YOUR BEST PLACE TO LEARN FRENCH" data-fr="EST LE MEILLEUR ENDROIT POUR APPRENDRE LE FRANÇAIS">IS YOUR BEST PLACE TO LEARN FRENCH</span></h2>
+                          <p></p>
+                          <a class="btn btn-primary btn-lg" href="#pricing" data-en="Services" data-fr="Services">Services</a>
+                      </div>
+                  </div>
+               </div>
+          </div>
+        </div>
+      </div><!--/.item-->
+    </section><!--/#main-slider-->
+
+
+<section id="pricing">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title text-center wow fadeInDown" data-en="What we offer" data-fr="Ce que nous offrons">What we offer</h2>
+            <p class="text-center wow fadeInDown" data-en=" JustFRENCH offers french language classes and tutoring for kids, adults and corporations." data-fr=" JustFRENCH propose des cours et du tutorat en français pour les enfants, les adultes et les entreprises."> JustFRENCH offers french language classes and tutoring for kids, adults and corporations.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-7 col-md-4">
+                <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+                    <ul class="pricing">
+                        <li class="plan-header">
+                          <img class="img-responsive" src="images/services/companiessquare.png" alt="">
+                            <div class="price-duration" >
+                            </div>
+                            <div class="plan-name">
+                                <a href="#companies" data-en="Companies" data-fr="Entreprises">Companies</a>
+                            </div>
+                        </li>
+                        <li><strong data-en="Training, interpretation and translation services in the office and work space." data-fr="Services de formation, d'interprétation et de traduction au bureau et sur le lieu de travail.">Training, interpretation and translation services in the office and work space.</strong></li>
+                        <li><strong data-en="Business advertising." data-fr="Publicité d'entreprise.">Business advertising.</strong></li>
+                        <li><strong data-en="Minimum package - 10 hours" data-fr="Forfait minimum - 10 heures">Minimum package - 10 hours</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-sm-7 col-md-4">
+                <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
+                    <ul class="pricing">
+                        <li class="plan-header">
+                          <img class="img-responsive" src="images/services/childrensquare.png" alt="">
+                            <div class="price-duration">
+                                <span class="price">
+                                </span>
+                                <span class="duration">
+                                </span>
+                            </div>
+                            <div class="plan-name">
+                                <a href="#children" data-en="Children" data-fr="Enfants">Children</a>
+                            </div>
+                        </li>
+                            <li><strong data-en="Help and explanation of the homework." data-fr="Aide et explication des devoirs.">Help and explanation of the homework.</strong></li>
+                            <li><strong data-en="Tutoring, summer courses, field trips in French." data-fr="Tutorat, cours d'été, sorties éducatives en français.">Tutoring, summer courses, <br> field trips in French.</strong></li>
+                            <li><strong data-en="Minimum package - 10 hours. 2 hours homework explanation available" data-fr="Forfait minimum - 10 heures. 2 heures d'explication des devoirs disponibles">Minimum package - 10 hours. <br> 2 hours homework explanation available</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-7 col-md-4">
+                <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+                    <ul class="pricing">
+                        <li class="plan-header">
+                          <img class="img-responsive" src="images/services/adultssquare.png" alt="">
+                            <div class="price-duration">
+                                <span class="price">
+                                </span>
+                                <span class="duration">
+                                </span>
+                            </div>
+                            <div class="plan-name">
+                                <a href="#adults" data-en="Adults" data-fr="Adultes">Adults</a>
+                            </div>
+                        </li>
+                            <li><strong data-en="Tutoring, customized French courses for traveling and business meetings." data-fr="Tutorat, cours de français personnalisés pour les voyages et réunions d'affaires.">Tutoring, customized French courses for traveling and business meetings.</strong></li>
+                            <li><strong data-en="Help for the parents of the French Immersion students." data-fr="Aide pour les parents d'élèves en immersion française.">Help for the parents of the French Immersion students.</strong></li>
+                            <li><strong data-en="Minimum package - 2 hours" data-fr="Forfait minimum - 2 heures">Minimum package - 2 hours</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--/#pricing-->
+
+    <section id="companies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown" data-en="Companies" data-fr="Entreprises">Companies</h2>
+                <p class="text-center wow fadeInDown" data-en="JustFRENCH for your Business." data-fr="JustFRENCH pour votre entreprise.">JustFRENCH for your Business.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                    <img class="img-responsive" src="images/services/companiessquare.png" alt="">
+                </div>
+                <div class="col-sm-6">
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-graduation-cap"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading" data-en="Training" data-fr="Formation">Training</h4>
+                            <p data-en="French Language training for your employees." data-fr="Formation en langue française pour vos employés.">French Language training for your employees.</p>
+                        </div>
+                    </div>
+
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-book"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading" data-en="Translation" data-fr="Traduction">Translation</h4>
+                            <p data-en="Interpretation and translation services in the office and work space." data-fr="Services d'interprétation et de traduction au bureau et sur le lieu de travail.">Interpretation and translation services in the office and work space.</p>
+                        </div>
+                    </div>
+
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-bullhorn"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading" data-en="Business advertising" data-fr="Publicité d'entreprise">Business advertising</h4>
+                            <p data-en="Text about Business advertising." data-fr="Texte concernant la publicité d'entreprise.">Text about Business advertising.</p>
+                        </div>
+                    </div>
+
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading" data-en="Minimum package - 10 hours" data-fr="Forfait minimum - 10 heures">Minimum package - 10 hours</h4>
+                            <p data-en="More info?" data-fr="Plus d'informations ?">More info?</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="children">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title text-center wow fadeInDown" data-en="Children's programs" data-fr="Programmes pour enfants">Children's programs</h2>
+            <p class="text-center wow fadeInDown" data-en="JustFRENCH for Children" data-fr="JustFRENCH pour les enfants">JustFRENCH for Children</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="media service-box wow fadeInLeft">
+                    <div class="pull-left">
+                        <i class="fa fa-pencil"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading" data-en="Homework" data-fr="Devoirs">Homework</h4>
+                        <p data-en="Help and explanation" data-fr="Aide et explications">Help and explanation</p>
+                    </div>
+                </div>
+
+                <div class="media service-box wow fadeInLeft">
+                    <div class="pull-left">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading" data-en="Tutoring" data-fr="Tutorat">Tutoring</h4>
+                        <p data-en="Information about tutoring" data-fr="Informations concernant le tutorat">Information about tutoring</p>
+                    </div>
+                </div>
+
+                <div class="media service-box wow fadeInLeft">
+                    <div class="pull-left">
+                        <i class="fa fa-sun-o"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading" data-en="Summer courses and field trips" data-fr="Cours d'été et sorties éducatives">Summer courses and field trips</h4>
+                        <p data-en="Text about Summer courses and field trips in French" data-fr="Texte concernant les cours d'été et les sorties en français">Text about Summer courses and field trips in French</p>
+                    </div>
+                </div>
+
+                <div class="media service-box wow fadeInLeft">
+                    <div class="pull-left">
+                        <i class="fa fa-clock-o"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading" data-en="Minimum package - 10 hours" data-fr="Forfait minimum - 10 heures">Minimum package - 10 hours</h4>
+                        <p data-en="More info?" data-fr="Plus d'informations ?">More info?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 wow fadeInRight">
+              <img class="img-responsive" src="images/services/childrensquare.png" alt="">
+            </div>
+         </div>
+    </div>
+</section>

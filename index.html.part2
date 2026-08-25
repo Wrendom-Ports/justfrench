@@ -1,0 +1,177 @@
+<section id="adults">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title text-center wow fadeInDown" data-en="Adult's Programs" data-fr="Programmes pour adultes">Adult's Programs</h2>
+            <p class="text-center wow fadeInDown" data-en="JustFRENCH for Adults" data-fr="JustFRENCH pour les adultes">JustFRENCH for Adults</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 wow fadeInLeft">
+                <img class="img-responsive" src="images/services/adultssquare.png" alt="">
+            </div>
+            <div class="col-sm-6">
+                <div class="media service-box wow fadeInRight">
+                    <div class="pull-left">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading" data-en="Tutoring" data-fr="Tutorat">Tutoring</h4>
+                        <p data-en="French Language tutoring for adults." data-fr="Tutorat en langue française pour adultes.">French Language tutoring for adults.</p>
+                    </div>
+                </div>
+
+                <div class="media service-box wow fadeInRight">
+                    <div class="pull-left">
+                        <i class="fa fa-globe"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading" data-en="Courses" data-fr="Cours">Courses</h4>
+                        <p data-en="Customized French courses for traveling and business meetings." data-fr="Cours de français personnalisés pour les voyages et réunions d'affaires.">Customized French courses for traveling and business meetings.</p>
+                    </div>
+                </div>
+
+                <div class="media service-box wow fadeInRight">
+                    <div class="pull-left">
+                        <i class="fa fa-smile-o"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading" data-en="Parents" data-fr="Parents">Parents</h4>
+                        <p data-en="Help for the parents of the French Immersion students." data-fr="Aide pour les parents d'élèves en immersion française.">Help for the parents of the French Immersion students.</p>
+                    </div>
+                </div>
+
+                <div class="media service-box wow fadeInRight">
+                    <div class="pull-left">
+                        <i class="fa fa-clock-o"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading" data-en="Minimum package - 2 hours" data-fr="Forfait minimum - 2 heures">Minimum package - 2 hours</h4>
+                        <p data-en="More info?" data-fr="Plus d'informations ?">More info?</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="get-in-touch">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown" data-en="Get in Touch" data-fr="Contactez-nous">Get in Touch</h2>
+                <p class="text-center wow fadeInDown" data-en="Please send us your request or question <br> and we will contact you shortly" data-fr="Veuillez nous envoyer votre demande ou question <br> et nous vous contacterons sous peu">Please send us your request or question <br> and we will contact you shortly</p>
+            </div>
+        </div>
+    </section><!--/#get-in-touch-->
+
+
+<section id="contact">
+    <div id="google-map" style="height:650px" data-latitude="43.726257" data-longitude="-79.699433"></div>
+
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-8">
+                    <div class="contact-form">
+                        <h3 data-en="Contact Us" data-fr="Contactez-nous">Contact Us</h3>
+
+                        <address>
+                         <strong data-en="JustFRENCH" data-fr="JustFRENCH">JustFRENCH</strong><br>
+                         45 Eastbourne Dr.<br>
+                         Brampton, ON Canada<br>
+                         <abbr title="Phone" data-en="P:" data-fr="T:">P:</abbr> (xxx) xxx-xxxx
+                        </address>
+
+                        <form id="main-contact-form" name="contact-form" method="post" action="#">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Name" data-en-placeholder="Name" data-fr-placeholder="Nom" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Email" data-en-placeholder="Email" data-fr-placeholder="Courriel" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" class="form-control" placeholder="Subject" data-en-placeholder="Subject" data-fr-placeholder="Sujet" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" class="form-control" rows="8" placeholder="Message" data-en-placeholder="Message" data-fr-placeholder="Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" data-en="Send Message" data-fr="Envoyer le message">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--/#bottom-->
+
+        <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2015 JustFRENCH.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons pull-right">
+                        <li><a href="https://facebook.com"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://youtube.com"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const langSwitchBtn = document.getElementById("lang-switch");
+        const langTextSpan = document.getElementById("lang-text");
+        let currentLang = localStorage.getItem("site_lang") || "en";
+
+        function updateLanguage(lang) {
+            document.querySelectorAll("[data-en][data-fr]").forEach(el => {
+                if (lang === "fr") {
+                    el.innerHTML = el.getAttribute("data-fr");
+                } else {
+                    el.innerHTML = el.getAttribute("data-en");
+                }
+            });
+
+            document.querySelectorAll("[data-en-placeholder][data-fr-placeholder]").forEach(el => {
+                if (lang === "fr") {
+                    el.setAttribute("placeholder", el.getAttribute("data-fr-placeholder"));
+                } else {
+                    el.setAttribute("placeholder", el.getAttribute("data-en-placeholder"));
+                }
+            });
+
+            if (lang === "fr") {
+                langTextSpan.innerText = "EN";
+                localStorage.setItem("site_lang", "fr");
+            } else {
+                langTextSpan.innerText = "FR";
+                localStorage.setItem("site_lang", "en");
+            }
+        }
+
+        updateLanguage(currentLang);
+
+        langSwitchBtn.addEventListener("click", function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            currentLang = currentLang === "en" ? "fr" : "en";
+            updateLanguage(currentLang);
+        });
+    });
+    </script>
+</body>
+</html>
