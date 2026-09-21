@@ -196,21 +196,41 @@ jQuery(function($) {'use strict';
 	var form = $('#main-contact-form');
 	form.submit(function(event){
 		event.preventDefault();
+
+		// Remove any status message left over from a previous attempt
+		form.find('.form_status').remove();
+
 		var form_status = $('<div class="form_status"></div>');
+
 		$.ajax({
-			url: $(this).attr('action'),
+			url: form.attr('action'),
+			method: 'POST',
+			data: form.serialize(),
+			dataType: 'json',
+			headers: {
+				'Accept': 'application/json'
+			},
 			beforeSend: function(){
 				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
 			}
 		}).done(function(data){
-			form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
+			form_status.html('<p class="text-success">Thank you for contacting us. As soon as possible we will contact you.</p>').delay(3000).fadeOut();
+			form[0].reset();
+		}).fail(function(jqXHR){
+			var message = 'Oops! Something went wrong and your message could not be sent. Please try again or email us directly.';
+			if (jqXHR.responseJSON && jqXHR.responseJSON.errors && jqXHR.responseJSON.errors.length) {
+				message = jqXHR.responseJSON.errors.map(function(err){ return err.message; }).join(' ');
+			}
+			form_status.html('<p class="text-danger">' + message + '</p>');
 		});
 	});
 
 	//Pretty Photo
-	$("a[rel^='prettyPhoto']").prettyPhoto({
-		social_tools: false
-	});
+	if (typeof $.fn.prettyPhoto === 'function') {
+		$("a[rel^='prettyPhoto']").prettyPhoto({
+			social_tools: false
+		});
+	}
 
 	//Google Map
 	var latitude = $('#google-map').data('latitude');
